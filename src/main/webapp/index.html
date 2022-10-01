@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BolsaTrabajo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+          <h1>Formulario</h1>
+        <form action="BolsaTrabajoServlet"method="POST">
+            <label>Id Persona</label>
+            <input type="text"name="IdPerson" value="1" required="true">
+            <br>
+            <label>Nombre</label>
+            <input type="text" name="Nombre" id="Nombre" value="1" required="true">
+            <br>
+            <label>Apellido</label>
+            <input type="text"name="Apellido" value="1" required="true">
+            <br>
+            <label>Genero</label>
+            <input type="text"name="Genero" value="1" required="true">
+            <br>
+            <label>Fecha de nacimiento</label>
+            <input type="text"name="Fechadenacimiento" value="1" required="true">
+            <br>
+            <label>Capacidades Especiales</label>
+            <input type="text"name="CapacidadesEspecial" value="1" required="true">
+            <br>
+            <label>Estado Civil</label>
+            <input type="text"name="EstadoCivil" value="1" required="true">
+            <br>
+            <label>Direccion</label>
+            <input type="text"name="Direccion" value="1" required="true">
+            <br>
+            <label>Jubilado</label>
+            <input type="radio"name="Jubilado"value="Si" checked="true" required="true">Si
+            <input type="radio"name="Jubilado"value="No" required="true">No
+            <br>
+            <label>Conocido por:</label>
+            <input type="text"name="Conocidopor" value="1" required="true">
+            <br>     
+            <input type="submit"value="Agregar">
+        </form>
+        
+        
+        <br>
+         <form action="BolsaTrabajoServlet"method="GET">
+            <button type="submit" class="btn btn-success" name="opcion" value="view"> Vet tabla</button>
+        </form>
+        <br>
+        <form action="BolsaTrabajoServlet"method="GET">
+            <button type="submit" class="btn btn-success" name="opcion" value="buscar"> Buscar por nombre</button>
+        </form>
+
+    </body>
+</html>
+
